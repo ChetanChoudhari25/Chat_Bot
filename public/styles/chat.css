@@ -132,14 +132,23 @@ nav ul li a:hover{
 @media screen and (max-width: 600px) {
     nav {
       flex-direction: column;
-      height: 100px;
+      height: 90px;
       justify-content: space-around;
     }
-    nav ul{
-        padding: 15px 0;
+    nav h1{
+        font-size: 30px;
+    }
+    nav ul li{
+        font-size: 13px;
     }
     .container{
-        height: calc(100vh - 116px);
+        height: calc(100vh - 106px);
+    }
+    #answerContainer{
+        height: 400px;
+    }
+    .pic img{
+        width: 25%;
     }
   }
 

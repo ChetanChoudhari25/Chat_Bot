@@ -71,7 +71,7 @@ nav ul li a:hover{
 }
 .container2{
     position: relative;
-    background-color: black;
+    background-color: transparent;
     width: 60%;
     height: 75vh;
     display: flex;
@@ -94,7 +94,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     margin-top: 15px;
-    padding: 5px;
+    gap: 20px;
 }
 
 .answerContainer {
@@ -108,17 +108,8 @@ nav ul li a:hover{
     border-radius: 25px;
     color: white;
     font-size: 50px;
+    background-color: black;
   }
-
-.questionInput {
-    margin-top: 10px;
-    padding: 10px 15px;
-    width: 80%;
-    border-radius: 25px;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
-}
 
 .button{
     display: flex;
@@ -137,18 +128,39 @@ nav ul li a:hover{
     color: white;
     background-color: black;
     transition: all 0.5s ease-in-out;
-    border: 1px solid white;
+    border: 2px solid white;
 }
+.chetan{
+    font-weight: bold;
+    position: fixed;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 25px;
+    right: 10px;
+    bottom: 10px;
+}
+
 @media screen and (max-width: 700px) {
     nav {
       flex-direction: column;
-      height: 100px;
-      justify-content: space-around;
+      height: 90px;
+      justify-content: space-evenly;
     }
-    nav ul{
-        padding: 15px 0;
+    nav h1{
+        font-size: 30px;
+    }
+    nav ul li{
+        font-size: 13px;
     }
     .container{
-        height: calc(100vh - 116px);
+        height: calc(100vh - 106px);
+    }
+    .answerContainer{
+        font-size: 25px;
+        height: 450px;
+    }
+    .pic img{
+        width: 25%;
     }
   }
